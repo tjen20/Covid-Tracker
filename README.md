@@ -11,3 +11,4 @@ https://tjen20.github.io/Covid-Tracker/
 
 ## Contributors
 Mady by Teri Jensen (tjen20), Spencer (mixedbeans), and Matt Larson ()
+ Matt here, my internet dropped to about 5bits/s so none of my slacks are going thru. It'll be fixed on Wednesday but dm me everything I need to know
