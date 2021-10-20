@@ -2,3 +2,82 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #fffff0;
+}
+
+/* Navigation/Header */
+.navbar-menu{
+    background-color: #cf6766;
+    padding: 40px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin-left: 155px;
+    color: #031424;
+}
+
+
+/* US Statistics Section */
+.stats {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+
+/* Map Section */
+.map{
+    text-align: center;
+}
+
+
+/* Vaccine Section */
+
+.vax {
+    border: 5px #031424 solid;
+    max-width: fit-content;
+    padding: 40px;
+    text-align: left;
+    margin: 30px 80px 30px 35%;
+    font-size: large;
+    background-color: #cf6766;
+    color: #031424;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #8eaebd;
+    font-weight: bolder;
+    color: #031424;
+    border: 2px #031424 solid;
+    margin-top: 10px;
+}
+
+
+/* World Stats Section */
+.world {
+    text-align: center;
+}
+
+/* Footer/ Links to CDC and VAX sites */
+.footer {
+    background-color: #cf6766;
+    font-size: x-large;
+    font-weight: bold;
+    color: #031424;
+    padding: 40px;
+    margin: 15px;
+}
+
+.footer a{
+    margin: 50px 30px 5px 25px;
+    color: #031424;
+}
+
+.footer a:hover{
+    margin: 50px 30px 5px 25px;
+    color: #8eaebd;
+}

@@ -10,4 +10,8 @@ https://tjen20.github.io/Covid-Tracker/
 
 
 ## Contributors
-Mady by Teri Jensen (tjen20), Spencer (mixedbeans), and Matt Larson ()
+Mady by Teri Jensen (tjen20), Spencer (mixedbeans), and Matt Larson (mjlars)
+
+## Sources
+https://covid-19.dataflowkit.com/ Us statistics and World statistic boxes.
+https://bulma.io/ Header and Footer framework.
