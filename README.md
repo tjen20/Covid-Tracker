@@ -15,3 +15,4 @@ Mady by Teri Jensen (tjen20), Spencer (mixedbeans), and Matt Larson (mjlars)
 ## Sources
 https://covid-19.dataflowkit.com/ Us statistics and World statistic boxes.
 https://bulma.io/ Header and Footer framework.
+https://codepen.io/carlnunes/pen/yhiEo State Selection Dropdown.

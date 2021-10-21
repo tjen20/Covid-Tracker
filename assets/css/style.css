@@ -41,7 +41,7 @@ body {
     max-width: fit-content;
     padding: 40px;
     text-align: left;
-    margin: 30px 80px 30px 35%;
+    margin: 30px auto;
     font-size: large;
     background-color: #cf6766;
     color: #031424;
@@ -54,6 +54,16 @@ body {
     color: #031424;
     border: 2px #031424 solid;
     margin-top: 10px;
+}
+
+.vax h3 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.vax input {
+    text-align: left;
+    padding-left: 2px;
 }
 
 
