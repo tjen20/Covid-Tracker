@@ -58,13 +58,33 @@
     <main>
       <!-- US Statistics -->
       <div id="USA-Stats" class="stats">
-        <iframe
+        <!-- <iframe
           src="https://covid-19.dataflowkit.com/assets/widget/c19-widget-dark.html"
           frameborder="0"
           scrolling="no"
           width="1200"
           height="250"
-        ></iframe>
+        ></iframe> -->
+        <h3>USA total cases starting September 2021</h3>
+          <label>See total cases up to a specified date:
+            <select class="covid-date" name="covid-date">
+              <option value="">...</option>
+              <option value="2021-09-01">2021-09-01</option>
+              <option value="2021-09-08">2021-09-08</option>
+              <option value="2021-09-15">2021-09-15</option>
+              <option value="2021-09-22">2021-09-22</option>
+              <option value="2021-29-01">2021-29-01</option>
+              <option value="2021-10-06">2021-10-06</option>
+              <option value="2021-10-13">2021-10-13</option>
+              <option value="2021-10-20">2021-10-20</option>
+              <option value="2021-10-27">2021-10-27</option>
+              <option value="2021-11-03">2021-11-03</option>
+              <option value="2021-11-10">2021-11-10</option>
+              <option value="2021-11-17">2021-11-17</option>
+            </select>
+          </label>
+
+          <h4 class="result"></h4>
       </div>
 
       <!-- Map with Clickable areas -->
