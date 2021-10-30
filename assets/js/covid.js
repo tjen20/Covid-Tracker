@@ -35,6 +35,10 @@ function statePi() {
 
 // Modal functionality
 $("#modalSave").on("click", function() {
+    var userVaxInfo = {
+        state: document.getElementById("state").value,
+    }
+    localStorage.setItem('userVaxInfo', JSON.stringify(userVaxInfo))
     $("#modalM").removeClass('is-active')
 })
 
@@ -45,3 +49,8 @@ $("#modalCancel").on("click", function() {
 $(".delete").on("click", function() {
     $("#modalM").removeClass('is-active')
 })
+
+// Local Storage
+
+
+
