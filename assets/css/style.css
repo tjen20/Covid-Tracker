@@ -105,7 +105,7 @@ body {
 .stats {
     border: 5px #031424 solid;
     max-width: fit-content;
-    padding: 40px;
+    padding: 20px;
     text-align: left;
     margin: 30px auto;
     font-size: large;
@@ -113,11 +113,18 @@ body {
     color: #031424;
     border-radius: 10px;
 }
+
 .stats h3 {
     font-size: x-large;
     text-align: center;
 }
+
 .stats h4 {
     font-size: large;
+    text-align: center;
+}
+
+.stats h5 {
+    font-size: small;
     text-align: center;
 }
