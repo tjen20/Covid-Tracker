@@ -10,6 +10,8 @@ function getApi() {
             var lastElement = data[data.length - 1];
             // console.log(lastElement)
             const result = document.querySelector('.result');
+            const updated = document.querySelector('.updated');
             result.textContent = `${lastElement.Cases}`
+            updated.textContent = `Last Updated: ${lastElement.Date}`
         })
 }
