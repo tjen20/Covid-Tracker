@@ -15,3 +15,20 @@ function getApi() {
             updated.textContent = `Last Updated: ${lastElement.Date}`
         })
 }
+
+function statePi() {
+    const requestStates = '';
+
+    fetch(requestStates)
+        .then(function(res) {
+            return res.json();
+        })
+        .then(function(data) {
+            const stateFilter = document.getElementById('#state');
+            console.log(stateFilter)
+
+        })
+}
+// document.addEventListener('click', statePi)
+
+// https://api.covidtracking.com/v2/states/<stateid>.json

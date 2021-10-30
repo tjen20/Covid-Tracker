@@ -6,22 +6,17 @@ Covid tracker to help with understanding and following critical information duri
 ## Website
 https://tjen20.github.io/Covid-Tracker/
 
-## Image
-
-
 ## Contributors
-Mady by Teri Jensen (tjen20), and Matt Larson (mjlars)
+Made by:
+Teri Jensen (tjen20)
+Matt Larson (mjlars)
 
 ## Sources
-https://covid-19.dataflowkit.com/ Us statistics and World statistic boxes.
+Styling and Format:
 https://bulma.io/ Header and Footer framework.
 https://codepen.io/carlnunes/pen/yhiEo State Selection Dropdown.
 
 
-
-
-
-
-https://covidtracking.com/data/api
+Api Integration:
 https://api.covidtracking.com/v1/states/info.json
 https://api.covid19api.com/total/country/united-states/status/confirmed
