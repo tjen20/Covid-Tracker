@@ -32,3 +32,25 @@ function statePi() {
 // document.addEventListener('click', statePi)
 
 // https://api.covidtracking.com/v2/states/<stateid>.json
+
+// Modal functionality
+$("#modalSave").on("click", function() {
+    var userVaxInfo = {
+        state: document.getElementById("state").value,
+    }
+    localStorage.setItem('userVaxInfo', JSON.stringify(userVaxInfo))
+    $("#modalM").removeClass('is-active')
+})
+
+$("#modalCancel").on("click", function() {
+    $("#modalM").removeClass('is-active')
+})
+
+$(".delete").on("click", function() {
+    $("#modalM").removeClass('is-active')
+})
+
+// Local Storage
+
+
+
