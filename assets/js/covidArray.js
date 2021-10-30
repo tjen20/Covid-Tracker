@@ -1,4 +1,4 @@
-const covidArray = [
+const casesArray = [
     {
         "Country": "United States of America",
         "CountryCode": "",
@@ -7728,15 +7728,3 @@ const covidArray = [
         "Date": "2021-10-26T00:00:00Z"
     }
 ]
-const dateSelector = document.querySelector('.covid-date');
-
-dateSelector.addEventListener('change', (event) => {
-    const result = document.querySelector('.result');
-    var searchKeyword = event.target.value;
-    var searchResult = covidArray.filter(word => word.Date.toLowerCase().indexOf(searchKeyword) >= 0);;
-    console.log(searchResult)
-    var caseResult = searchResult[0].Cases;
-    console.log(caseResult)
-    result.textContent = `Total cases up to ${event.target.value}: ${searchResult[0].Cases}`;
-    
-});
