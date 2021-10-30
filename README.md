@@ -10,7 +10,7 @@ https://tjen20.github.io/Covid-Tracker/
 
 
 ## Contributors
-Mady by Teri Jensen (tjen20), Spencer (mixedbeans), and Matt Larson (mjlars)
+Mady by Teri Jensen (tjen20), and Matt Larson (mjlars)
 
 ## Sources
 https://covid-19.dataflowkit.com/ Us statistics and World statistic boxes.
@@ -24,3 +24,4 @@ https://codepen.io/carlnunes/pen/yhiEo State Selection Dropdown.
 
 https://covidtracking.com/data/api
 https://api.covidtracking.com/v1/states/info.json
+https://api.covid19api.com/total/country/united-states/status/confirmed
