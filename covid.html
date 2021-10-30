@@ -14,7 +14,8 @@
   </head>
 
   <!-- Header (framework from Bulma)-->
-  <body>
+  <!-- getApi() calls the number of cases for the top bar -->
+  <body onload="getApi()">
     <header>
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -65,26 +66,9 @@
           width="1200"
           height="250"
         ></iframe> -->
-        <h3>USA total cases starting September 2021</h3>
-          <label>See total cases up to a specified date:
-            <select class="covid-date" name="covid-date">
-              <option class="covid-date1" value="">...</option>
-              <option class="covid-date1" value="2021-09-01">2021-09-01</option>
-              <option class="covid-date1" value="2021-09-08">2021-09-08</option>
-              <option class="covid-date1" value="2021-09-15">2021-09-15</option>
-              <option class="covid-date1" value="2021-09-22">2021-09-22</option>
-              <option class="covid-date1" value="2021-09-29">2021-09-29</option>
-              <option class="covid-date1" value="2021-10-06">2021-10-06</option>
-              <option class="covid-date1" value="2021-10-13">2021-10-13</option>
-              <option class="covid-date1" value="2021-10-20">2021-10-20</option>
-              <option class="covid-date1" value="2021-10-27">2021-10-27</option>
-              <option class="covid-date1" value="2021-11-03">2021-11-03</option>
-              <option class="covid-date1" value="2021-11-10">2021-11-10</option>
-              <option class="covid-date1" value="2021-11-17">2021-11-17</option>
-            </select>
-          </label>
-
-          <h4 class="result"></h4>
+        <h3>USA total cases</h3>
+        <h4>Cases since the pandemic started:</h4>
+        <h4 class="result"></h4>
       </div>
 
       <!-- Map with Clickable areas -->
