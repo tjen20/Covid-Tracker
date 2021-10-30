@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="./assets/css/Images/iconmonstr-virus-12 (1).ico">
   </head>
@@ -57,6 +58,147 @@
     </header>
 
     <main>
+      <div id="modalM" class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div id="Vax-Info" class="vax">
+              <h3>Do you want more information on Vaccines in your area?</h3>
+              <p>
+                Fill out this form and we will send updates as they are sent out by
+                the CDC and the FDA.
+              </p>
+              <form id="Vax-Form">
+                <!-- <label for="name">Enter full name:</label> -->
+                <!-- <input type="text" placeholder="Your Name"/> -->
+                <!-- <label for="email">Enter email address:</label> -->
+                <!-- <input type="email" placeholder="Email Address"/> -->
+                <div>
+                  <!-- <label for="phone">Enter a telephone number:</label> -->
+                  <!-- <input type="tel" placeholder="Phone Number"/> -->
+                  <label for="home">Enter home state:</label>
+                  <!-- <input type="text" placeholder="Home State"/> -->
+                  <select id="state" name="state">
+                    <option value="---">---</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="GU">Guam</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                </div>
+                <div>
+                  <p>
+                    Are you fully vaccinated?
+                    <span class="vaccine-info">
+                      <input type="radio" name="vaccine1-confirm" id="vaccine1-yes" />
+                      <label for="vaccine1-yes">Yes</label>
+                    </span>
+                    <span class="vaccine-info">
+                      <input type="radio" name="vaccine1-confirm" id="vaccine1-no" />
+                      <label for="vaccine1-no">No</label>
+                    </span>
+                  </p>
+                  <p>
+                    Which vax did you receive?
+                    <span class="vaccine-info">
+                      <input type="radio" name="vaccine2-confirm" id="vaccine2-yes" />
+                      <label for="vaccine2-yes">Moderna</label>
+                    </span>
+                    <span class="vaccine-info">
+                      <input type="radio" name="vaccine2-confirm" id="vaccine2-no" />
+                      <label for="vaccine2-no">Pfizer</label>
+                    </span>
+                    <span class="vaccine-info">
+                      <input type="radio" name="vaccine2-confirm" id="vaccine2-no" />
+                      <label for="vaccine2-no">Johnson</label>
+                    </span>
+                  </p>
+                  <!-- <p>
+                    Have you received the booster dose of the vaccine?
+                    <span class="vaccine-info">
+                      <input type="radio" name="vaccine3-confirm" id="vaccine3-yes" />
+                      <label for="vaccine3-yes">Yes</label>
+                    </span>
+                    <span class="vaccine-infor">
+                      <input type="radio" name="vaccine3-confirm" id="vaccine3-no" />
+                      <label for="vaccine3-no">No</label>
+                    </span>
+                  </p>-->
+                  <p>
+                    <span class="age-confirm">
+                      <input type="checkbox" id="checkbox" />
+                      <label for="checkbox">
+                          I acknowledge that I am at least 18 years of age.</label>
+                    </span>
+                  </p>
+                </div>
+                <button type="submit" class="button">Submit</button>
+              </form>
+            </div>
+      
+          </section>
+          <footer class="modal-card-foot">
+            <button id="modalSave" class="button is-success">Save changes</button>
+            <button id="modalCancel" class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+
       <!-- US Statistics -->
       <div id="USA-Stats" class="stats">
         <!-- <iframe
@@ -81,130 +223,7 @@
       </div>
 
       <!-- Vaccination area with local storage elements -->
-      <div id="Vax-Info" class="vax">
-        <h3>Do you want more information on Vaccines in your area?</h3>
-        <p>
-          Fill out this form and we will send updates as they are sent out by
-          the CDC and the FDA.
-        </p>
-        <form id="Vax-Form">
-          <!-- <label for="name">Enter full name:</label> -->
-          <!-- <input type="text" placeholder="Your Name"/> -->
-          <!-- <label for="email">Enter email address:</label> -->
-          <!-- <input type="email" placeholder="Email Address"/> -->
-          <div>
-            <!-- <label for="phone">Enter a telephone number:</label> -->
-            <!-- <input type="tel" placeholder="Phone Number"/> -->
-            <label for="home">Enter home state:</label>
-            <!-- <input type="text" placeholder="Home State"/> -->
-            <select id="state" name="state">
-              <option value="---">---</option>
-              <option value="AL">Alabama</option>
-              <option value="AK">Alaska</option>
-              <option value="AZ">Arizona</option>
-              <option value="AR">Arkansas</option>
-              <option value="CA">California</option>
-              <option value="CO">Colorado</option>
-              <option value="CT">Connecticut</option>
-              <option value="DE">Delaware</option>
-              <option value="DC">District of Columbia</option>
-              <option value="FL">Florida</option>
-              <option value="GA">Georgia</option>
-              <option value="GU">Guam</option>
-              <option value="HI">Hawaii</option>
-              <option value="ID">Idaho</option>
-              <option value="IL">Illinois</option>
-              <option value="IN">Indiana</option>
-              <option value="IA">Iowa</option>
-              <option value="KS">Kansas</option>
-              <option value="KY">Kentucky</option>
-              <option value="LA">Louisiana</option>
-              <option value="ME">Maine</option>
-              <option value="MD">Maryland</option>
-              <option value="MA">Massachusetts</option>
-              <option value="MI">Michigan</option>
-              <option value="MN">Minnesota</option>
-              <option value="MS">Mississippi</option>
-              <option value="MO">Missouri</option>
-              <option value="MT">Montana</option>
-              <option value="NE">Nebraska</option>
-              <option value="NV">Nevada</option>
-              <option value="NH">New Hampshire</option>
-              <option value="NJ">New Jersey</option>
-              <option value="NM">New Mexico</option>
-              <option value="NY">New York</option>
-              <option value="NC">North Carolina</option>
-              <option value="ND">North Dakota</option>
-              <option value="OH">Ohio</option>
-              <option value="OK">Oklahoma</option>
-              <option value="OR">Oregon</option>
-              <option value="PA">Pennsylvania</option>
-              <option value="PR">Puerto Rico</option>
-              <option value="RI">Rhode Island</option>
-              <option value="SC">South Carolina</option>
-              <option value="SD">South Dakota</option>
-              <option value="TN">Tennessee</option>
-              <option value="TX">Texas</option>
-              <option value="UT">Utah</option>
-              <option value="VT">Vermont</option>
-              <option value="VA">Virginia</option>
-              <option value="VI">Virgin Islands</option>
-              <option value="WA">Washington</option>
-              <option value="WV">West Virginia</option>
-              <option value="WI">Wisconsin</option>
-              <option value="WY">Wyoming</option>
-            </select>
-          </div>
-          <div>
-            <p>
-              Are you fully vaccinated?
-              <span class="vaccine-info">
-                <input type="radio" name="vaccine1-confirm" id="vaccine1-yes" />
-                <label for="vaccine1-yes">Yes</label>
-              </span>
-              <span class="vaccine-info">
-                <input type="radio" name="vaccine1-confirm" id="vaccine1-no" />
-                <label for="vaccine1-no">No</label>
-              </span>
-            </p>
-            <p>
-              Which Vaccination did you receive?
-              <span class="vaccine-info">
-                <input type="radio" name="vaccine2-confirm" id="vaccine2-yes" />
-                <label for="vaccine2-yes">Moderna</label>
-              </span>
-              <span class="vaccine-info">
-                <input type="radio" name="vaccine2-confirm" id="vaccine2-no" />
-                <label for="vaccine2-no">Pfizer</label>
-              </span>
-              <span class="vaccine-info">
-                <input type="radio" name="vaccine2-confirm" id="vaccine2-no" />
-                <label for="vaccine2-no">Johnson</label>
-              </span>
-            </p>
-            <!-- <p>
-              Have you received the booster dose of the vaccine?
-              <span class="vaccine-info">
-                <input type="radio" name="vaccine3-confirm" id="vaccine3-yes" />
-                <label for="vaccine3-yes">Yes</label>
-              </span>
-              <span class="vaccine-infor">
-                <input type="radio" name="vaccine3-confirm" id="vaccine3-no" />
-                <label for="vaccine3-no">No</label>
-              </span>
-            </p>-->
-            <p>
-              <span class="age-confirm">
-                <input type="checkbox" id="checkbox" />
-                <label for="checkbox">
-                    I acknowledge that I am at least 18 years of age.</label>
-              </span>
-            </p>
-          </div>
-          <button type="submit" class="button">Submit</button>
-        </form>
-      </div>
-
+      
       <!-- World Statistics Table -->
       <div id="World-Stats" class="world">
         <iframe
@@ -229,6 +248,9 @@
       </footer>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="./assets/js/covid.js"></script>
   </body>
 </html>
