@@ -105,13 +105,15 @@ body {
 .stats {
     border: 5px #031424 solid;
     max-width: fit-content;
-    padding: 20px;
+    padding: 20px 100px;
     text-align: left;
     margin: 30px auto;
     font-size: large;
     background-color: #cf6766;
     color: #031424;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .stats h3 {
@@ -127,4 +129,20 @@ body {
 .stats h5 {
     font-size: small;
     text-align: center;
+}
+
+.stats button {
+    text-align: center;
+    border: none;
+    margin: 10px auto 0;
+    padding: 3px;
+    font-size: medium;
+    border-bottom: 2px solid #031424;
+    border-radius: 3px;
+    background-color: #cf6766;
+}
+
+.stats button:hover {
+    background-color: #031424;
+    color: #cf6766;
 }

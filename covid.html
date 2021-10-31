@@ -58,7 +58,7 @@
     </header>
 
     <main>
-      <div id="modalM" class="modal is-active">
+      <div id="modalM" class="modal">
         <div class="modal-background"></div>
         <div class="modal-card">
           <header class="modal-card-head">
@@ -187,7 +187,7 @@
                     </span>
                   </p>
                 </div>
-                <button type="submit" class="button">Submit</button>
+                <button id="submitButton" type="submit" class="button">Submit</button>
               </form>
             </div>
       
@@ -201,25 +201,16 @@
 
       <!-- US Statistics -->
       <div id="USA-Stats" class="stats">
-        <!-- <iframe
-          src="https://covid-19.dataflowkit.com/assets/widget/c19-widget-dark.html"
-          frameborder="0"
-          scrolling="no"
-          width="1200"
-          height="250"
-        ></iframe> -->
         <h3>USA total cases</h3>
         <h4>Cases since the pandemic started:</h4>
         <h4 class="result"></h4>
         <h5 class="updated"></h5>
+        <button id="modalActivation">Want more information about your state?</button>
       </div>
 
       <!-- Map with Clickable areas -->
       <div id="US-Map" class="map">
-        <!-- <img src="./assets/css/Images/wt109.webp" placeholder /> -->
         <iframe width="1200" height="600" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
-        <!-- <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="Yes" marginheight="0" marginwidth="0" title="COVID-19" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe></div> -->
-
       </div>
 
       <!-- Vaccination area with local storage elements -->
