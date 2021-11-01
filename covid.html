@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covid Tracker</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="shortcut icon" href="./assets/css/Images/iconmonstr-virus-12 (1).ico">
+    <link rel="shortcut icon" href="./assets/css/Images/iconmonstr-virus-12 (1).ico"/>
   </head>
 
   <!-- Header (framework from Bulma)-->
@@ -25,8 +22,7 @@
             class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
+            data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -39,19 +35,9 @@
 
             <a href="#US-Map" class="navbar-item"> US Map </a>
 
-            <a href="#Vax-Info" class="navbar-item"> Vaccine Form </a>
+            <a href="#World-Stats" class="navbar-item"> World Statistics </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> More </a>
-
-              <div class="navbar-dropdown">
-                <a href="#World-Stats" class="navbar-item">
-                  World Statistics
-                </a>
-                <hr class="navbar-divider" />
-                <a href="#CDC" class="navbar-item"> CDC Links </a>
-              </div>
-            </div>
+            <a href="#CDC" class="navbar-item"> CDC Links </a>
           </div>
         </div>
       </nav>
@@ -66,23 +52,16 @@
             <button class="delete" aria-label="close"></button>
           </header>
           <section class="modal-card-body">
-            <!-- Content ... -->
+      <!-- Vaccination area with local storage elements -->
             <div id="Vax-Info" class="vax">
               <h3>Do you want more information on Vaccines in your area?</h3>
               <p>
-                Fill out this form and we will send updates as they are sent out by
-                the CDC and the FDA.
+                Fill out this form and we will send updates as they are sent out
+                by the CDC and the FDA.
               </p>
               <form id="Vax-Form">
-                <!-- <label for="name">Enter full name:</label> -->
-                <!-- <input type="text" placeholder="Your Name"/> -->
-                <!-- <label for="email">Enter email address:</label> -->
-                <!-- <input type="email" placeholder="Email Address"/> -->
                 <div>
-                  <!-- <label for="phone">Enter a telephone number:</label> -->
-                  <!-- <input type="tel" placeholder="Phone Number"/> -->
                   <label for="home">Enter home state:</label>
-                  <!-- <input type="text" placeholder="Home State"/> -->
                   <select id="state" name="state">
                     <option value="---">---</option>
                     <option value="AL">Alabama</option>
@@ -145,55 +124,59 @@
                   <p>
                     Are you fully vaccinated?
                     <span class="vaccine-info">
-                      <input type="radio" name="vaccine1-confirm" id="vaccine1-yes" />
+                      <input
+                        type="radio"
+                        name="vaccine1-confirm"
+                        id="vaccine1-yes"/>
                       <label for="vaccine1-yes">Yes</label>
                     </span>
                     <span class="vaccine-info">
-                      <input type="radio" name="vaccine1-confirm" id="vaccine1-no" />
+                      <input
+                        type="radio"
+                        name="vaccine1-confirm"
+                        id="vaccine1-no"/>
                       <label for="vaccine1-no">No</label>
                     </span>
                   </p>
                   <p>
                     Which vax did you receive?
                     <span class="vaccine-info">
-                      <input type="radio" name="vaccine2-confirm" id="vaccine2-yes" />
+                      <input
+                        type="radio"
+                        name="vaccine2-confirm"
+                        id="vaccine2-yes"/>
                       <label for="vaccine2-yes">Moderna</label>
                     </span>
                     <span class="vaccine-info">
-                      <input type="radio" name="vaccine2-confirm" id="vaccine2-no" />
+                      <input
+                        type="radio"
+                        name="vaccine2-confirm"
+                        id="vaccine2-no"/>
                       <label for="vaccine2-no">Pfizer</label>
                     </span>
                     <span class="vaccine-info">
-                      <input type="radio" name="vaccine2-confirm" id="vaccine2-no" />
+                      <input
+                        type="radio"
+                        name="vaccine2-confirm"
+                        id="vaccine2-no"/>
                       <label for="vaccine2-no">Johnson</label>
                     </span>
                   </p>
-                  <!-- <p>
-                    Have you received the booster dose of the vaccine?
-                    <span class="vaccine-info">
-                      <input type="radio" name="vaccine3-confirm" id="vaccine3-yes" />
-                      <label for="vaccine3-yes">Yes</label>
-                    </span>
-                    <span class="vaccine-infor">
-                      <input type="radio" name="vaccine3-confirm" id="vaccine3-no" />
-                      <label for="vaccine3-no">No</label>
-                    </span>
-                  </p>-->
                   <p>
-                    <span class="age-confirm">
+                    <span id="age" class="age">
                       <input type="checkbox" id="checkbox" />
                       <label for="checkbox">
-                          I acknowledge that I am at least 18 years of age.</label>
+                        I acknowledge that I am at least 18 years of age.</label>
                     </span>
                   </p>
                 </div>
-                <button id="submitButton" type="submit" class="button">Submit</button>
               </form>
             </div>
-      
           </section>
           <footer class="modal-card-foot">
-            <button id="modalSave" class="button is-success">Save changes</button>
+            <button id="modalSave" class="button is-success">
+              Save changes
+            </button>
             <button id="modalCancel" class="button">Cancel</button>
           </footer>
         </div>
@@ -205,36 +188,40 @@
         <h4>Cases since the pandemic started:</h4>
         <h4 class="result"></h4>
         <h5 class="updated"></h5>
-        <button id="modalActivation">Want more information about your state?</button>
+        <button id="modalActivation">
+          Want more information about your state?
+        </button>
       </div>
 
       <!-- Map with Clickable areas -->
       <div id="US-Map" class="map">
-        <iframe width="1200" height="600" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
+        <iframe
+          width="1200"
+          height="600"
+          src="https://app.developer.here.com/coronavirus/"
+          frameborder="0">
+        </iframe>
       </div>
 
-      <!-- Vaccination area with local storage elements -->
-      
       <!-- World Statistics Table -->
       <div id="World-Stats" class="world">
         <iframe
           src="https://covid-19.dataflowkit.com/assets/widget/c19-top-widget.html"
           width="1000"
           height="480"
-          frameborder="0"
-        ></iframe>
+          frameborder="0">
+        </iframe>
       </div>
     </main>
-    
 
     <!-- Footer with Links to CDC (framework from Bulma)-->
     <footer>
       <footer id="CDC" class="footer">
         <div class="content has-text-centered">
           <a class="footer-1">CDC Links:</a>
-          <a href="https://www.cdc.gov/vaccines/schedules/index.html"> Immunization Schedules</a>
-          <a href="https://covid.cdc.gov/covid-data-tracker/#datatracker-home"> County Covid Tracking</a>
-          <a href="https://covid.cdc.gov/covid-data-tracker/#global-counts-rates"> Global Tracking</a>
+          <a href="https://www.cdc.gov/vaccines/schedules/index.html">Immunization Schedules</a>
+          <a href="https://covid.cdc.gov/covid-data-tracker/#datatracker-home">County Covid Tracking</a>
+          <a href="https://covid.cdc.gov/covid-data-tracker/#global-counts-rates">Global Tracking</a>
         </div>
       </footer>
     </footer>
