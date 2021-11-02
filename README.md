@@ -1,4 +1,4 @@
-https://tjen20.github.io/Covid-Tracker/ 
+# Covid-Tracker
 
 ## Purpose
 Covid tracker to help with understanding and following critical information during the pandemic. 
