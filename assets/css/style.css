@@ -46,6 +46,7 @@ body {
     background-color: #cf6766;
     color: #031424;
     border-radius: 10px;
+    overflow-wrap:break-word;
 }
 
 .button {
@@ -146,3 +147,4 @@ body {
     background-color: #031424;
     color: #cf6766;
 }
+
